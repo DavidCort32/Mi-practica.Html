@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f9fb;
+    color: #333;
+    line-height: 1.6;
+}
+header {
+    background-color: #028a24;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.nav {
+    list-style: none;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: #90efb0;
+    border-bottom: 2px solid #a1ef90;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr; 
+    gap: 2rem;
+    padding: 2rem;
+}
+
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+section {
+    background-color: rgb(150, 212, 156);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+section h2 {
+    color: #5fdc74;
+    margin-bottom: 1rem;
+}
+
+article {
+    margin-bottom: 1rem;
+    border-left: 4px solid #00b4d8;
+    padding-left: 1rem;
+}
+
+article h3 {
+    color: #88ec70;
+    margin-bottom: 0.5rem;
+}
+
+aside {
+    background-color: #edf6f9;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+aside h2 {
+    color: #6ab600;
+    margin-bottom: 1rem;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    margin-bottom: 0.5rem;
+}
+
+aside ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+section {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+article {
+    border-left: 4px solid #f5f5f5;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+aside {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.acerca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.foto {
+    border-radius: 50%;
+    width: 200px;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.redes {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.redes a {
+    color: #023e8a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.redes a:hover {
+    color: #00d856;
+}
+
+.formulario {
+    background-color: white;
+    width: 90%;
+    max-width: 450px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="password"],
+.formulario select {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.formulario input:focus,
+.formulario select:focus {
+    outline: none;
+    border-color: #6fe39d;
+    box-shadow: 0 0 4px rgba(0, 119, 182, .4);
+}
+
+.grupo-opciones {
+    margin-bottom: 1rem;
+}
+
+.grupo-opciones p {
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+}
+
+.grupo-opciones label {
+    display:  block;
+    font-weight: normal;
+    margin-bottom:  0.3rem;
+}
+
+.formulario button {
+    width: 100%;
+    background-color: #92e678;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario button:hover {
+    background-color: #6ee388;
+}
+
+footer {
+    text-align: center;
+    background-color: #1e8d3d;
+    color: white;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

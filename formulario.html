@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="estilos.CSS">
+   <title> Registro de Usuario</title>
+</head>
+
+<body>
+   <header>
+      <h1>Registro de Usuario</h1>
+      <p>Por favor completa tus datos</p>
+      <nav>
+            <ul class="nav">
+                <li><a href="index.HTML">Inicio</a></li>
+                <li><a href="acerca.HTML">Acerca de</a></li>
+                <li><a href="formulario.html" class="active">formulario</a></li>
+            </ul>
+        </nav>
+   </header>
+   <main>
+      <form class="formulario">
+         <label for="nombre">Nombre Completo:</label>
+         <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo">
+
+         <label for="correo">Correo Electronico:</label>
+         <input type="email" id="correo" name="correo" placeholder="numControl@cbtis142.edu.mx">
+
+         <label for="password">Contraseña:</label>
+         <input type="password" id="password" name="password" placeholder="********">
+
+         <label for="carrera">Carrera:</label>
+
+         <select name="carrera" id="carrera">
+            <option value="">Selecciona una opcion:</option>
+            <option value="programacion">Programacion</option>
+            <option value="contabilidad">Contabilidad</option>
+            <option value="construccion">Construccion</option>
+            <option value="labquimico">Laboratorista Quimica</option>
+         </select>
+
+         <div class="grupo opciones">
+            <p>Turno:</p>
+            <label><input type="radio" name="turno" value="matutino">Matutino</label>
+            <label><input type="radio" name="turno" value="vespertino">Vespertino</label>
+         </div>
+
+         <div class="grupo opciones">
+            <p>Area de Interes:</p>
+            <label><input type="checkbox" name="interes" value="robotica">Ciencia</label>
+            <label><input type="checkbox" name="interes" value="emprendimiento">Emprendimiento</label>
+            <label><input type="checkbox" name="interes" value="deporte">Deporte</label>
+         </div>
+
+         <button type="submit">Registrarme</button>
+      </form>
+   </main>
+   <footer>CBTIS 142 - David Cortes</footer>
+</body>
+
+</html>
